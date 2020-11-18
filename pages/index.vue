@@ -159,7 +159,7 @@
               shadow="never"
             >
               <h5 class="number-semester">Ciclo {{ number }}</h5>
-              <!-- <el-select
+              <el-select
                 v-model="form.semesters[number - 1]"
                 @change="onChangedSelected($event)"
                 multiple
@@ -175,8 +175,8 @@
                   :value="course.id"
                 >
                 </el-option>
-              </el-select> -->
-              <el-tag
+              </el-select>
+              <!-- <el-tag
                 :key="tag"
                 v-for="tag in dynamicTags"
                 closable
@@ -206,7 +206,7 @@
                 size="small"
                 @click="showInput"
                 >+ New Tag</el-button
-              >
+              > -->
             </el-card>
           </el-col>
         </el-row>
@@ -332,9 +332,9 @@ export default {
 body {
   font-family: "Open Sans", sans-serif;
 }
-.el-input {
+/* .el-input {
   width: auto;
-}
+} */
 .el-input__inner:focus {
   border-color: #1283ff;
 }
